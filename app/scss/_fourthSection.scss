@@ -1,0 +1,51 @@
+.fourthSection{
+  height: 850px;
+  background-color: $darkBlue;
+  
+  &__topbox{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'DM Sans', sans-serif;
+    color: $whiteGrey;
+    height: 235px;
+  }
+
+  &__bgsketch1{
+    position: relative;
+    top: 100px;
+    background-image: url(../../images/Sketch-7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 446px;
+    height: 116px;
+  }
+
+  &__stamp{
+    position: relative;
+    bottom: 100px;
+    background-image: url(../../images/Stamp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:168px;
+    height: 168px;
+  }
+
+  &__text{
+    display: block;
+    text-align: center;
+    font-size: 107px;
+    color: $whiteGrey;
+  }
+
+  &__para{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 650px;
+    font-size: 16px;
+    color: $whiteGrey;
+  }
+}

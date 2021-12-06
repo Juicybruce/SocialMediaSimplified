@@ -1,0 +1,69 @@
+.secondSection {
+  background-color: $darkBlue;
+  &__container{
+    color: $whiteGrey;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 130px;
+    height:620px;
+  }
+
+  &__title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteGrey;
+    font-family: 'DM Sans', sans-serif;
+    height: 225px;
+    font-size: 1.625rem;
+  }
+
+  &__textbox{
+    font-size: 3rem;
+    text-align: center;
+
+    > div {
+      padding: 15px;
+      
+      &:not(:last-child){
+        border-bottom: 1px solid $whiteGrey;
+      }
+
+      &:first-child{
+        font-style: italic;
+      }
+    }
+  }
+
+  &__bgimg1{
+    position: relative;
+    top: 240px;
+    background-image: url(../../images/secondSection1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 287px;
+    height: 322px;
+  }
+
+  &__bgimg2{
+    position: relative;
+    top: -160px;
+    background-image: url(../../images/secondSection2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 328px;
+  }
+
+  &__bgsketch1{
+    position: absolute;
+    right: 0px;
+    top:1600px;
+    background-image: url(../../images/Sketch-9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 262px;
+    height: 94px;
+  }
+}

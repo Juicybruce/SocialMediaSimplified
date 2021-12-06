@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACZ,MAAM,EAAE,KAAK;CAKd;;AAHE,AAAD,sBAAS,CAAA;EACP,MAAM,EAAE,KAAK;CACd",
+    "sources": [
+        "fourthSection.scss"
+    ],
+    "names": [],
+    "file": "fourthSection.css"
+}

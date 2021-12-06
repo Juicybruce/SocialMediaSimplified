@@ -1,0 +1,34 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box; //includes padding in final box sizes
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Old Standard TT', serif;
+  line-height: 1.1;
+}
+
+//FlexBox
+//helper classes 
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
