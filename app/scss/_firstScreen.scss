@@ -1,84 +1,116 @@
 .firstScreen {
   background-color: $whiteGrey;
-  h1{
-    text-align: center;
-    color: $darkBlue;
-    font-size: 70px;
-    font-family:'Old Standard TT', serif;
-    font-weight: 550;
-    margin: 2px;
-  }
-  sup{
-    font-size: 30px;
-    font-weight: lighter;
+  position: relative;
+
+  &__title{
+    position: relative;
+    z-index: 1;
+    h1{
+      text-align: center;
+      color: $darkBlue;
+      font-size: 5.4vw;
+      font-family:'Old Standard TT', serif;
+      font-weight: 550;
+      margin: 0px;
+    }
+    sup{
+      padding: 15px;
+      font-size: 2.3vw;
+      font-weight: lighter;
+    }
   }
 
+
   &__bgsketch1{
-    position: relative;
-    top: 100px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
     background-image: url(../../images/Sketch-10.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 140px;
-    height: 55px;
+    width: 141px;
+    height: 60px;
+
+    display:none;
+
+    @media (min-width: 768px){
+      display: block;
+    }
   }
 
   &__bgsketch2{
     position: absolute;
     right: 0px;
-    top: 650px;
+    bottom: 50px;
     background-image: url(../../images/Sketch-3.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 203px;
-    height: 78px;
+    width: 262px;
+    height: 91px;
+
+    display:none;
+
+    @media (min-width: 768px){
+      display: block;
+    }
   }
 
   &__aboutBox{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-left: 130px;
-    margin-right: 130px;
-    height: 445px;
-
-    div {
-      text-align: center;
-      padding: 100px;
-      color: $darkBlue;
-      font-weight: 600;
-      font-family: 'DM Sans', sans-serif;
-
-      p {
-        text-align: justify;
-        max-width: 400px;
-        font-weight: 300;
-      }
+    align-items: center;
+    margin-bottom: 50px;
+    @media (min-width: 768px){
+      flex-direction: row;
     }
   }
 
+  &__paragraph {
+    text-align: center;
+    color: $darkBlue;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    p {
+      text-align: justify;
+      font-weight: 300;
+    }
+  }
+
+
   &__centerImg {
-    width:375px;
+    position: relative;
+    z-index: 0;
+    width: 375px;
     height: 420px;
     background-image: url(../../images/FirstScreenPhoto.png);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: -45px;
     }
 
-  &__contact{
+  &__contact {
     display: inline-block;
+
     color: $whiteGrey;
     background-color: $darkBlue;
+
     text-decoration: none;
     font-weight: lighter;
     text-align: center;
+
     line-height: 30px;
     border-radius: 15px;
     width: 125px; 
     height: 30px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
-  &__learn{
+  &__learn {
     display: inline-block;
     color: $darkBlue;
     border: 2px solid $darkBlue;
@@ -90,15 +122,20 @@
     border-radius: 15px;
     width: 125px; 
     height: 30px;
-    font-size: 10px;
+    font-size: 15px;
+  }
+
+  &__bottomBorder{
+    width: 100%;
+    border: 1px solid $darkBlue;
   }
 
   &__bottomBox{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid $darkBlue;
-    height: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: $darkBlue;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
@@ -108,5 +145,4 @@
       height: 19px;
     }
   }
-
 }
