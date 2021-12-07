@@ -160,10 +160,22 @@ body {
 .firstScreen__title h1 {
   text-align: center;
   color: #10578b;
-  font-size: 5.4vw;
+  font-size: 46px;
   font-family: 'Old Standard TT', serif;
   font-weight: 550;
   margin: 0px;
+}
+
+@media (min-width: 768px) {
+  .firstScreen__title h1 {
+    font-size: 75px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .firstScreen__title h1 {
+    font-size: 107px;
+  }
 }
 
 .firstScreen__title sup {
@@ -318,6 +330,7 @@ body {
 
 .secondSection {
   background-color: #10578b;
+  position: relative;
 }
 
 .secondSection__container {
@@ -328,8 +341,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 130px;
-  margin-right: 130px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   height: 620px;
 }
 
@@ -345,12 +358,26 @@ body {
           align-items: center;
   color: #e7e5d1;
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.625rem;
+  font-size: 25px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .secondSection__textbox {
-  font-size: 3rem;
+  font-size: 30px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .secondSection__textbox {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .secondSection__textbox {
+    font-size: 48px;
+  }
 }
 
 .secondSection__textbox > div {
@@ -367,7 +394,8 @@ body {
 
 .secondSection__bgimg1 {
   position: relative;
-  top: 240px;
+  bottom: -250px;
+  margin-left: -30px;
   background-image: url(../../images/secondSection1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -378,6 +406,7 @@ body {
 .secondSection__bgimg2 {
   position: relative;
   top: -160px;
+  margin-right: -30px;
   background-image: url(../../images/secondSection2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -388,12 +417,19 @@ body {
 .secondSection__bgsketch1 {
   position: absolute;
   right: 0px;
-  top: 1600px;
+  bottom: 70px;
   background-image: url(../../images/Sketch-9.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 262px;
   height: 94px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .secondSection__bgsketch1 {
+    display: block;
+  }
 }
 
 .thirdSection {

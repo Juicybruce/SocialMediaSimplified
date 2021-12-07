@@ -8,7 +8,15 @@
     h1{
       text-align: center;
       color: $darkBlue;
-      font-size: 5.4vw;
+      font-size: 46px;
+      @media (min-width: 768px){
+        font-size: 75px;
+      }
+  
+      @media (min-width: 1000px){
+        font-size: 107px;
+      }
+
       font-family:'Old Standard TT', serif;
       font-weight: 550;
       margin: 0px;
