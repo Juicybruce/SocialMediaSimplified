@@ -1,0 +1,265 @@
+.contact {
+  background-color: $whiteGrey;
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__leftColumn {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 150px 50px;
+
+    border-bottom: 2px solid $darkBlue;
+
+    @media (min-width: 768px) {
+      border-right: 2px solid $darkBlue;
+      border-bottom: none;
+    }
+
+    h1{
+      text-align: center;
+      color: $darkBlue;
+      font-size: 55px;
+      @media (min-width: 768px){
+        font-size: 75px;
+      }
+  
+      @media (min-width: 1000px){
+        font-size: 107px;
+      }
+
+      font-family:'Old Standard TT', serif;
+      font-weight: 550;
+      margin: 0px;
+    }
+    sup{
+      padding: 15px;
+      font-size: 2.3vw;
+      font-weight: lighter;
+    }
+  }
+
+  &__paragraph {
+    max-width: 475px;
+    text-align: justify;
+    text-align-last: center;
+    color: $darkBlue;
+    font-size: 20px;
+  }
+
+  &__rightColumn {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 150px 0px;
+
+    @media (min-width: 768px) {
+      padding: 0px 50px;
+    }
+
+  }
+
+  &__submissionTitle {
+    font-size: 48px;
+    color: $darkBlue;
+    padding: 30px 10px;
+  }
+
+  &__nameInput {
+    max-width: 450px;
+    border-bottom: 1px solid $darkBlue;
+    border-width: 1px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    input {
+      border: none;
+      color: $darkBlue;
+      background-color: $whiteGrey;
+      height: 30px;
+      max-width: 800px;
+      font-size: 20px;
+    }
+
+    input::placeholder{
+        color: $darkBlue;
+        font-size: 16px;
+    }
+
+    input:focus{
+      outline:none;
+    } 
+  }
+
+  &__buttonContainerText {
+    font-family: 'DM Sans', sans-serif;
+    color: $darkBlue;
+    padding-bottom: 15px;
+    font-weight: bolder;
+  }
+
+  &__buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  &__button1{
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 200px; 
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  &__button2{
+    display: inline-block;
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 200px; 
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  &__button3{
+    display: inline-block;
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 100px; 
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  &__button4{
+    display: inline-block;
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 140px; 
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  &__button5{
+    display: inline-block;
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 170px; 
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  &__button6{
+    display: inline-block;
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 125px; 
+    height: 30px;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+
+  &__submitButton {
+    display: inline-block;
+    color: $whiteGrey;
+    background-color: $darkBlue;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 125px; 
+    height: 30px;
+    font-size: 18px;
+    margin: 30px 10px;
+  }
+
+  &__bgsketch1{
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    background-image: url(../../images/Sketch-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 181px;
+    height: 84px;
+
+    display:none;
+
+    @media (min-width: 768px){
+      display: block;
+    }
+  }
+
+  &__bgsketch2{
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+    background-image: url(../../images/Sketch-6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 60px;
+
+    display:none;
+
+    @media (min-width: 768px){
+      display: block;
+    }
+  }
+}
