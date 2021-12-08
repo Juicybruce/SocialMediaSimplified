@@ -1,3 +1,113 @@
 .sixthSection {
-  width: auto;
+
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__leftColumn { 
+    display: flex;
+    flex-grow: 1;
+    background-color: $darkBlue;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bgimg1{
+    background-image: url(../../images/sixthSection1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 389px;
+    height: 582px;
+  }
+
+  &__rightColumn { 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $whiteGrey;
+    padding-top: 250px;
+    padding-bottom: 200px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+      text-align: center;
+      color: $darkBlue;
+      font-size: 46px;
+      @media (min-width: 768px){
+        font-size: 75px;
+      }
+  
+      @media (min-width: 1000px){
+        font-size: 107px;
+      }
+
+      font-family:'Old Standard TT', serif;
+      font-weight: 550;
+      margin: 0px;
+    }
+    sup{
+      padding: 15px;
+      font-size: 2.3vw;
+      font-weight: lighter;
+    }
+  }
+
+  &__para {
+    text-align: center;
+    color: $darkBlue;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    text-align: justify;
+    font-weight: 300;
+    width: 450px;
+    margin: 30px;
+  }
+
+  &__learn {
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
+    background-color: $whiteGrey;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 15px;
+    width: 125px; 
+    height: 30px;
+    font-size: 15px;
+  }
+
+  &__bgsketch1 {
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    background-image: url(../../images/Sketch-4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 164px;
+    height: 60px;
+
+    display:none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
 }

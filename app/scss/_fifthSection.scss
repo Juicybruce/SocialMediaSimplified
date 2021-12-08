@@ -1,11 +1,14 @@
 .fifthSection{
-  display: flex;
-  height: 855px;
   background-color: $whiteGrey;
+  
 
-  &__leftColumn{
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__leftColumn {
     flex-grow: 1;
-    height: 855px;
     border-right: 2px solid $darkBlue;
     width: auto;
     display: flex;
@@ -13,55 +16,57 @@
     justify-content: space-between;
   }
 
-  &__title{
+  &__rightColumn {
+    position: relative;
+    width: 612px;
+    height: 925px;
+    background-image: url(../../images/processImage.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &__bgsketch1 {
+    position: absolute;
+    top: 80px;
+    left: -100px;
+    background-image: url(../../images/Sketch-6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 60px;
+
+    display:none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+
+  &__title {
     
     padding-top: 110px;
     font-size: 107px;
     color: $darkBlue;
   }
 
-  &__para{
+  &__para {
     font-size: 26px;
     color: $darkBlue;
-    border-bottom: 2px solid $darkBlue;
     padding-top: 30px;
 
-    p{
+    p {
       font-size:16px;
       width: 510px;
     }
 
-    &:last-child{
+    &:last-child {
       padding-bottom: 70px;
     }
 
-    &:not(:last-child){
+    &:not(:last-child) {
       padding-bottom: 30px;
+      border-bottom: 2px solid $darkBlue;
     }
   }
-
-  &__text{
-    margin-left: 130px;
-  }
-
-  &__bgsketch1{
-    position: absolute;
-    right: 520px;
-    top: 4300px;
-    background-image: url(../../images/Sketch-6.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 214px;
-    height: 60px;
-  }
-
-  &__rightColumn{
-    width: 600px;
-    height: 855px;
-    background-image: url(../../images/processImage.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-bottom: 2px solid $darkBlue;
-  }
-
 }

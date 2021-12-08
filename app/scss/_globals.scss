@@ -42,25 +42,9 @@ body {
   @media (min-width: 1400px) {
     max-width: 1300px
   }
-
-
-
 }
 
-//FlexBox
-//helper classes 
-.flex {
-  display: flex;
-
-  &-jc-sb {
-    justify-content: space-between;
-  }
-
-  &-jc-c {
-    justify-content: center;
-  }
-
-  &-ai-c {
-    align-items: center;
-  }
+.fullWidthBorder {
+  width: 100%;
+  border: 1px solid $darkBlue;
 }
