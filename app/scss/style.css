@@ -544,7 +544,7 @@ body {
 }
 
 .fourthSection {
-  height: 850px;
+  position: relative;
   background-color: #10578b;
 }
 
@@ -552,31 +552,59 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 26px;
   font-family: 'DM Sans', sans-serif;
   color: #e7e5d1;
-  height: 235px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 
 .fourthSection__bgsketch1 {
-  position: relative;
+  position: absolute;
   top: 100px;
+  left: 0px;
   background-image: url(../../images/Sketch-7.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 446px;
   height: 116px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .fourthSection__bgsketch1 {
+    display: block;
+  }
+}
+
+.fourthSection__bgsketch2 {
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  background-image: url(../../images/Sketch-8.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 142px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .fourthSection__bgsketch2 {
+    display: block;
+  }
 }
 
 .fourthSection__stamp {
-  position: relative;
-  bottom: 100px;
+  position: absolute;
+  top: -65px;
+  right: 20px;
   background-image: url(../../images/Stamp.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -587,8 +615,14 @@ body {
 .fourthSection__text {
   display: block;
   text-align: center;
-  font-size: 107px;
+  font-size: 75px;
   color: #e7e5d1;
+}
+
+@media (min-width: 768px) {
+  .fourthSection__text {
+    font-size: 107px;
+  }
 }
 
 .fourthSection__para {
@@ -596,9 +630,29 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 650px;
+  max-width: 650px;
   font-size: 16px;
   color: #e7e5d1;
+  padding-top: 110px;
+}
+
+.fourthSection__bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.fourthSection__bottomBox img {
+  width: 11px;
+  height: 19px;
 }
 
 .fifthSection {

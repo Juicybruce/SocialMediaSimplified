@@ -1,30 +1,56 @@
-.fourthSection{
-  height: 850px;
+.fourthSection {
+  position: relative;
   background-color: $darkBlue;
   
-  &__topbox{
+  &__topbox {
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 26px;
     font-family: 'DM Sans', sans-serif;
     color: $whiteGrey;
-    height: 235px;
+    padding-top: 110px;
+    padding-bottom: 110px;
   }
 
-  &__bgsketch1{
-    position: relative;
+  &__bgsketch1 {
+    position: absolute;
     top: 100px;
+    left: 0px;
     background-image: url(../../images/Sketch-7.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 446px;
     height: 116px;
+    
+    display: none;
+    
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 
-  &__stamp{
-    position: relative;
+  &__bgsketch2 {
+    position: absolute;
     bottom: 100px;
+    right: 0px;
+    background-image: url(../../images/Sketch-8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 142px;
+    
+    display: none;
+    
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__stamp {
+    position: absolute;
+    top: -65px;
+    right: 20px;
     background-image: url(../../images/Stamp.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -32,20 +58,38 @@
     height: 168px;
   }
 
-  &__text{
+  &__text {
     display: block;
     text-align: center;
-    font-size: 107px;
+    font-size: 75px;
     color: $whiteGrey;
+
+    @media (min-width: 768px) {
+      font-size: 107px;
+    }
   }
 
-  &__para{
+  &__para {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 650px;
+    max-width: 650px;
     font-size: 16px;
     color: $whiteGrey;
+    padding-top: 110px;
+  }
+
+  &__bottomBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    img{
+      width: 11px;
+      height: 19px;
+    }
   }
 }
