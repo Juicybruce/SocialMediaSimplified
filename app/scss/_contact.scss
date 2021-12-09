@@ -119,7 +119,7 @@
     font-family: 'DM Sans', sans-serif;
   }
 
-  &__button1{
+  &__button{
     color: $darkBlue;
     border: 2px solid $darkBlue;
     background-color: $whiteGrey;
@@ -128,90 +128,30 @@
     text-align: center;
     line-height: 29px;
     border-radius: 15px;
-    width: 200px; 
-    height: 30px;
     font-size: 15px;
     margin: 10px 10px;
-  }
+    height: 30px;
+    cursor: pointer;
 
-  &__button2{
-    display: inline-block;
-    color: $darkBlue;
-    border: 2px solid $darkBlue;
-    background-color: $whiteGrey;
-    text-decoration: none;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 29px;
-    border-radius: 15px;
-    width: 200px; 
-    height: 30px;
-    font-size: 15px;
-    margin: 10px 10px;
-  }
+    &__1 {
+      width: 200px; 
+    }
 
-  &__button3{
-    display: inline-block;
-    color: $darkBlue;
-    border: 2px solid $darkBlue;
-    background-color: $whiteGrey;
-    text-decoration: none;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 29px;
-    border-radius: 15px;
-    width: 100px; 
-    height: 30px;
-    font-size: 15px;
-    margin: 10px 10px;
-  }
+    &__2 {
+      width: 100px; 
+    }
 
-  &__button4{
-    display: inline-block;
-    color: $darkBlue;
-    border: 2px solid $darkBlue;
-    background-color: $whiteGrey;
-    text-decoration: none;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 29px;
-    border-radius: 15px;
-    width: 140px; 
-    height: 30px;
-    font-size: 15px;
-    margin: 10px 10px;
-  }
+    &__3 {
+      width: 140px;
+    }
 
-  &__button5{
-    display: inline-block;
-    color: $darkBlue;
-    border: 2px solid $darkBlue;
-    background-color: $whiteGrey;
-    text-decoration: none;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 29px;
-    border-radius: 15px;
-    width: 170px; 
-    height: 30px;
-    font-size: 15px;
-    margin: 10px 10px;
-  }
+    &__4 {
+      width: 170px;
+    }
 
-  &__button6{
-    display: inline-block;
-    color: $darkBlue;
-    border: 2px solid $darkBlue;
-    background-color: $whiteGrey;
-    text-decoration: none;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 29px;
-    border-radius: 15px;
-    width: 125px; 
-    height: 30px;
-    font-size: 15px;
-    margin: 10px 10px;
+    &__5 {
+      width: 125px;
+    }
   }
 
   &__submitButton {

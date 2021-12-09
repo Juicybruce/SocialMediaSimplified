@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Old+Standard+TT:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5f78ca6619.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="app/scss/style.css">
 
 
@@ -18,11 +19,18 @@
 <header class="header">
     <div class="container">
         <nav class="header__nav">
-            <a href="#" class="header__menu">
+            <div class="header__menu">
                 <span></span>
-                <span></span>
-                <span></span>
-            </a>
+            </div>
+            <nav class="header__sidebar">
+                <ul class="header__menuListing">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Get In Touch</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </nav>
             <div class="header__search">
                 <input type="text">
                 <button type="btn"><i class="fas fa-search"></i></i></button>
@@ -95,15 +103,15 @@
     <div class="container">
         <div class="thirdSection__container">
             <div class="thirdSection__column1">
-                <img src="/images/project1.png">
+                <div class="thirdSection__projectImg1"></div>
                 <div class="thirdSection__projectName">Project Name - Year 2021</div>
-                <img src="/images/project2.png">
+                <div class="thirdSection__projectImg2"></div>
                 <div class="thirdSection__projectName">Project Name - Year 2021</div>
             </div>
             <div class="thirdSection__column2">
-                <img src="/images/project3.png">
+                <div class="thirdSection__projectImg3"></div>
                 <div class="thirdSection__projectName">Project Name - Year 2021</div>
-                <img src="/images/project4.png">
+                <div class="thirdSection__projectImg4"></div>
                 <div class="thirdSection__projectName">Project Name - Year 2021</div>
             </div>
         </div>
@@ -136,7 +144,6 @@
 </section>
 
 <section class="fifthSection">
-    <div class="container">
         <div class="fifthSection__container">
             <div class="fifthSection__leftColumn">
                 <div class="fifthSection__title">
@@ -165,7 +172,6 @@
                 <div class="fifthSection__bgsketch1"></div>
             </div>
         </div>
-    </div>
     <div class="fullWidthBorder"></div>
 </section>
 
@@ -229,12 +235,12 @@
                 <div class="contact__submissionTitle">The Project</div>
                 <div class="contact__buttonContainerText">How We Can Help</div>
                 <div class="contact__buttonContainer">
-                    <a href="#" class="contact__button1">Social Media Marketing</a>
-                    <a href="#" class="contact__button2">Social Media Management</a>
-                    <a href="#" class="contact__button3">Campaign</a>
-                    <a href="#" class="contact__button4">Brand Strategy</a>
-                    <a href="#" class="contact__button5">Marketing Strategy</a>
-                    <a href="#" class="contact__button6">Brand Design</a>
+                    <a class="contact__button contact__button__1">Social Media Marketing</a>
+                    <a class="contact__button contact__button__1">Social Media Management</a>
+                    <a class="contact__button contact__button__2">Campaign</a>
+                    <a class="contact__button contact__button__3">Brand Strategy</a>
+                    <a class="contact__button contact__button__4">Marketing Strategy</a>
+                    <a class="contact__button contact__button__5">Brand Design</a>
                 </div>
                 <div class="contact__nameInput">
                     <input type="text" placeholder="Project Description"/>
