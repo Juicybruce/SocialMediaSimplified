@@ -95,6 +95,15 @@
     font-size: 15px;
   }
 
+  &__learn.active {
+    color: $whiteGrey;
+    background-color: $darkBlue;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+
+
   &__bgsketch1 {
     position: absolute;
     right: 0px;

@@ -107,16 +107,22 @@
 
     color: $whiteGrey;
     background-color: $darkBlue;
-
+    border: 2px solid $darkBlue;
     text-decoration: none;
     font-weight: lighter;
     text-align: center;
-
-    line-height: 30px;
+    line-height: 26px;
     border-radius: 15px;
     width: 125px; 
     height: 30px;
     font-size: 15px;
+  }
+
+  &__contact.active {
+    color: $darkBlue;
+    background-color: $whiteGrey;
+    transition: 0.3s;
+    cursor: pointer;
   }
 
   &__learn {
@@ -134,6 +140,13 @@
     font-size: 15px;
   }
 
+  &__learn.active {
+    color: $whiteGrey;
+    background-color: $darkBlue;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
   &__bottomBorder{
     width: 100%;
     border: 1px solid $darkBlue;
@@ -148,10 +161,26 @@
     color: $darkBlue;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
+  }
+
+  &__arrowButton {
+    border: none;
+    border-color: $darkBlue;
+    background-color: transparent;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    transition: 0.3s;
 
     img{
       width: 11px;
       height: 19px;
     }
   }
+
+  &__arrowButton.active {
+      border: 1px solid $darkBlue;
+      border-radius: 50%;
+      transition: 0.3s;
+  } 
 }

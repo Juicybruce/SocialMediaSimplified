@@ -68,7 +68,9 @@
     <div class="container">
         <div class="firstScreen__bottomBox">
             <div>MADE FOR YOUR BUSINESS</div>
-            <img src="images/arrow.png">
+            <button type="button" class="firstScreen__arrowButton">
+                <img src="images/arrow.png">
+            </button>
             <div>READY? START TODAY</div>
         </div>    
     </div>
@@ -116,7 +118,7 @@
             </div>
         </div>
         <div class="thirdSection__bottomBox">
-            <a href="#" class="thirdSection__contact">SEE MORE</a>
+            <a href="#" class="thirdSection__seeMore">SEE MORE</a>
         </div>
     </div>
 </section>
@@ -138,7 +140,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
         </div>
         <div class="fourthSection__bottomBox">
-            <img src="images/arrow-white.png">
+            <button type="button" class=fourthSection__arrowButton>
+                <img src="images/arrow-white.png">
+            </button>
         </div>
     </div>
 </section>
@@ -198,15 +202,36 @@
     <div class="testimonials__stamp"></div>
     <div class="container">
         <h1 class="testimonials__title">Testimonials</h1>
-        <div class="testimonials__quote">
-            <div class="testimonials__quoteTick"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            <div class="testimonials__quoteSource">- Genevieve Harleen, Company Name</div>
-            <div class="testimonials__arrows">
-                <button type="button"><img src="./images/arrow-left.png"/></button>
-                <button type="button"><img src="./images/arrow-right.png"/></button>
-            </div>  
+        <div class="testimonials__quotesContainer">
+            <ul>
+                <li>
+                    <div class="testimonials__quote">
+                        <div class="testimonials__quoteTick"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <div class="testimonials__quoteSource">- Cassandra Withworthington, Company Name</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="testimonials__quote">
+                        <div class="testimonials__quoteTick"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="testimonials__quoteSource">- Genevieve Harleen, Company Name</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="testimonials__quote">
+                        <div class="testimonials__quoteTick"></div>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <div class="testimonials__quoteSource">- Marcus Markley, Company Name</div>
+                    </div>
+                </li>
+            </ul>
         </div>
+
+    <div class="testimonials__arrows">
+        <button type="button"><img src="./images/arrow-left.png"/></button>
+        <button type="button"><img src="./images/arrow-right.png"/></button>
+    </div>      
     </div>
     <div class="fullWidthBorder"></div>
 </section>
@@ -246,7 +271,7 @@
                     <input type="text" placeholder="Project Description"/>
                 </div>
                 <div>
-                    <a href="#" class="contact__submitButton">SUBMIT</a>
+                    <a class="contact__submitButton">SUBMIT</a>
                 </div>
             </div>
         </div>

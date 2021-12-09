@@ -86,10 +86,26 @@
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  &__arrowButton {
+    border: none;
+    border-color: $whiteGrey;
+    background-color: transparent;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    transition: 0.3s;
 
     img{
       width: 11px;
       height: 19px;
     }
   }
+
+  &__arrowButton.active {
+      border: 1px solid $whiteGrey;
+      border-radius: 50%;
+      transition: 0.3s;
+  } 
 }

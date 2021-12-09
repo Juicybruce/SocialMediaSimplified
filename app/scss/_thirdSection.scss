@@ -106,20 +106,28 @@
     padding-bottom: 70px;
   }
 
-  &__contact{
+  &__seeMore{
     display: block;
     position: relative;
     color: $whiteGrey;
     background-color: $darkBlue;
+    border: 2px solid $darkBlue;
     text-decoration: none;
     font-weight: lighter;
     font-family: 'DM Sans', sans-serif;
     text-align: center;
-    line-height: 30px;
+    line-height: 26px;
     border-radius: 15px;
     width: 125px; 
     height: 30px;
     font-size: 15px;
+  }
+
+  &__seeMore.active {
+    color: $darkBlue;
+    background-color: $whiteGrey;
+    transition: 0.3s;
+    cursor: pointer;
   }
 
 }
