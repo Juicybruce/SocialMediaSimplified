@@ -1208,12 +1208,16 @@ body {
 }
 
 .testimonials__quotesContainer ul {
-  width: 300%;
+  width: 311%;
   height: 330px;
   position: relative;
+  left: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .testimonials__quotesContainer ul li {
+  display: inline;
   list-style: none;
   float: left;
   padding-right: 300px;

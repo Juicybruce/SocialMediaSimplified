@@ -45,6 +45,15 @@ $(".sixthSection__learn").hover(function() {
   $(this).toggleClass(" active");
 })
 
+//testimonials quotes slider
+$(".testimonials__arrowLeft").click(function() {
+  $(".testimonials__quotesContainer ul").animate({left: '-100%'}, 500);
+})
+
+/*$(".testimonials__arrowLeft").click(function() {
+  $(".testimonials__quotesContainer ul").animate({left: '+100%'}, 500);
+})
+*/
 //contact form functionality
 $(".contact__submitButton").hover(function() {
   $(this).toggleClass(" active");
