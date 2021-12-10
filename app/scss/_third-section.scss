@@ -1,8 +1,8 @@
-.thirdSection {
+.third-section {
   background-color: $whiteGrey;
   position: relative;
 
-  &__titlebox{
+  &__titlebox {
     position: relative;
     display: block;
     text-align: center;
@@ -11,7 +11,7 @@
     padding-top: 110px;
     padding-bottom: 40px;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       font-size:107px;
     }
   }
@@ -21,29 +21,30 @@
     top: 25px;
     right: 115px;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       font-size:24px;
       top: 30px;
       right: 140px;
     }
   }
-  &__container{
+  &__container {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    @media (min-width: 768px){
+
+    @media (min-width: 768px) {
       flex-direction: row;
     }
   }
-  &__column1{
+  &__column1 {
     margin-top: 55px;
     width: 545px;
   }
-  &__column2{
+  &__column2 {
     margin-top: 55px;
     width: 545px;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       margin-top: 205px;
     }
   }
@@ -89,7 +90,7 @@
   }
   
 
-  &__projectName{
+  &__projectName {
     color: $darkBlue;
     font-size: 33px;
     padding-top: 20px;

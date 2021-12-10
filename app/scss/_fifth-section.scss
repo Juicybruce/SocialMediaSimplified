@@ -1,4 +1,4 @@
-.fifthSection{
+.fifth-section {
   background-color: $whiteGrey;
   
 
@@ -24,17 +24,16 @@
   &__rightColumn {
     position: relative;
     display: none;
-
-    @media (min-width: 768px) {
-      display: block;
-    }
-
     width: 612px;
     height: 925px;
     background-image: url(../../images/processImage.png);
     background-repeat: no-repeat;
     background-position: right;
     box-shadow: 0 3000px rgba(16, 87, 139, 0.178) inset;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 
   &__bgsketch1 {

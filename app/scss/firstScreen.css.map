@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "firstScreen.scss"
+        "first-screen.scss"
     ],
     "names": [],
-    "file": "firstScreen.css"
+    "file": "first-screen.css"
 }

@@ -1,8 +1,8 @@
-.firstScreen {
+.first-screen {
   background-color: $whiteGrey;
   position: relative;
 
-  &__title{
+  &__title {
     position: relative;
     z-index: 2;
     h1{
@@ -29,7 +29,7 @@
   }
 
 
-  &__bgsketch1{
+  &__bgsketch1 {
     position: absolute;
     left: 0px;
     top: 50px;
@@ -46,7 +46,7 @@
     }
   }
 
-  &__bgsketch2{
+  &__bgsketch2 {
     position: absolute;
     right: 0px;
     bottom: 50px;
@@ -55,21 +55,21 @@
     background-repeat: no-repeat;
     width: 262px;
     height: 91px;
-
     display:none;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       display: block;
     }
   }
 
-  &__aboutBox{
+  &__aboutBox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    @media (min-width: 768px){
+
+    @media (min-width: 768px) {
       flex-direction: row;
     }
   }
@@ -95,7 +95,7 @@
     z-index: 1;
     width: 375px;
     height: 420px;
-    background-image: url(../../images/FirstScreenPhoto.png);
+    background-image: url(../../images/firstScreenPhoto.png);
     background-repeat: no-repeat;
     background-position: bottom;
     margin-top: -45px;
@@ -147,12 +147,12 @@
     cursor: pointer;
   }
 
-  &__bottomBorder{
+  &__bottomBorder {
     width: 100%;
     border: 1px solid $darkBlue;
   }
 
-  &__bottomBox{
+  &__bottomBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,7 +172,7 @@
     height: 33px;
     transition: 0.3s;
 
-    img{
+    img {
       width: 11px;
       height: 19px;
     }
