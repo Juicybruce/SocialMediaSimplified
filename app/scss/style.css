@@ -882,14 +882,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
   .fifth-section__leftColumn {
     border-right: 2px solid #10578b;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 
@@ -930,31 +935,44 @@ body {
 }
 
 .fifth-section__title {
-  padding-top: 110px;
-  padding-left: 100px;
-  font-size: 107px;
+  font-size: 50px;
   color: #10578b;
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .fifth-section__title {
+    font-size: 107px;
+    padding-left: 100px;
+  }
 }
 
 .fifth-section__para {
   font-size: 26px;
   color: #10578b;
-  padding-top: 30px;
-  padding-left: 100px;
+  padding: 10px;
 }
 
 .fifth-section__para p {
   font-size: 16px;
-  width: 510px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .fifth-section__para:last-child {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 .fifth-section__para:not(:last-child) {
   padding-bottom: 30px;
   border-bottom: 2px solid #10578b;
+}
+
+@media (min-width: 768px) {
+  .fifth-section__para {
+    padding-left: 100px;
+    padding-top: 0px;
+  }
 }
 
 .sixth-section {
@@ -1202,17 +1220,16 @@ body {
 
 .testimonials__quotesContainer {
   padding: 50px;
-  height: 330px;
   margin-bottom: 150px;
 }
 
 .testimonials__quote {
   position: relative;
   color: #10578b;
-  font-size: 22px;
+  font-size: 18px;
   text-align: justify;
   width: 100%;
-  padding: 0px 100px;
+  padding: 0px 50px;
 }
 
 @media (min-width: 768px) {
@@ -1240,8 +1257,15 @@ body {
   background-image: url(../../images/quote.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 36px;
-  height: 34px;
+  width: 18px;
+  height: 16px;
+}
+
+@media (min-width: 768px) {
+  .testimonials__quoteTick {
+    width: 36px;
+    height: 34px;
+  }
 }
 
 .testimonials__arrows {
