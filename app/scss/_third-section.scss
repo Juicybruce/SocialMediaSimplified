@@ -15,6 +15,7 @@
       font-size:107px;
     }
   }
+
   &__subtitle{
     font-size: 20px;
     position: relative;
@@ -27,75 +28,66 @@
       right: 140px;
     }
   }
+
   &__container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-
+    padding-left: 25px;
+    padding-right: 25px;
+    
     @media (min-width: 768px) {
-      flex-direction: row;
-    }
-  }
-  &__column1 {
-    margin-top: 55px;
-    width: 545px;
-  }
-  &__column2 {
-    margin-top: 55px;
-    width: 545px;
-
-    @media (min-width: 768px) {
-      margin-top: 205px;
+      display: flex;
     }
   }
 
-  &__projectImg1 {
-    display:block;
-    background-image: url(../../images/project1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 545px;
-    height: 396px;
-    box-shadow: 0 3000px rgba(16, 87, 139, 0.178) inset;
+  &__column {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 55px;
+
+    @media (min-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    &--offset {
+      @media (min-width: 768px) {
+        margin-top: 205px;
+      }
+    }
   }
 
-  &__projectImg2 {
-    display:block;
-    background-image: url(../../images/project2.png);
-    background-size: contain;
+  &__projectImg {
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 545px;
-    height: 396px;
     box-shadow: 0 3000px rgba(16, 87, 139, 0.178) inset;
-  }
 
-  &__projectImg3 {
-    display:block;
-    background-image: url(../../images/project3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 545px;
-    height: 396px;
-    box-shadow: 0 3000px rgba(16, 87, 139, 0.178) inset;
-  }
+    &:before {
+      content: "";
+      display: block;
+      padding-bottom: 70%;
+    }
 
-  &__projectImg4 {
-    display:block;
-    background-image: url(../../images/project4.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 545px;
-    height: 396px;
-    box-shadow: 0 3000px rgba(16, 87, 139, 0.178) inset;
+    &--1 {
+      background-image: url(../../images/project1.png);
+    }
+
+    &--2 {
+      background-image: url(../../images/project2.png);
+    }
+
+    &--3 {
+      background-image: url(../../images/project3.png);
+    }
+
+    &--4 {
+      background-image: url(../../images/project4.png);
+    }
   }
-  
 
   &__projectName {
     color: $darkBlue;
     font-size: 33px;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 75px;
     border-bottom: 2px solid $darkBlue;
     margin-bottom: 40px;
   }
