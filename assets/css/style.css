@@ -221,7 +221,7 @@ body {
   color: #10578b;
   background-color: #e7e5d1;
   height: 30px;
-  width: 100%;
+  max-width: 150px;
   padding-right: 30px;
   font-size: 20px;
   border-bottom: 1px solid #10578b;
