@@ -1179,8 +1179,10 @@ body {
   font-family: 'DM Sans', sans-serif;
   text-align: justify;
   font-weight: 300;
-  width: 450px;
-  margin: 30px;
+  max-width: 450px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .sixth-section__learn {
@@ -1439,15 +1441,21 @@ body {
 .contact__leftColumn h2 {
   text-align: center;
   color: #10578b;
-  font-size: 55px;
+  font-size: 45px;
   font-family: 'Old Standard TT', serif;
   font-weight: 550;
   margin: 0px;
 }
 
+@media (min-width: 576px) {
+  .contact__leftColumn h2 {
+    font-size: 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .contact__leftColumn h2 {
-    font-size: 75px;
+    font-size: 70px;
   }
 }
 
@@ -1458,7 +1466,6 @@ body {
 }
 
 .contact__leftColumn sup {
-  padding: 15px;
   font-size: 2.3vw;
   font-weight: lighter;
 }

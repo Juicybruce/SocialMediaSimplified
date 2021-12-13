@@ -76,8 +76,10 @@
     font-family: 'DM Sans', sans-serif;
     text-align: justify;
     font-weight: 300;
-    width: 450px;
-    margin: 30px;
+    max-width: 450px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   &__learn {
