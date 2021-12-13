@@ -6,15 +6,17 @@
     position: relative;
     display: block;
     text-align: center;
-    font-size:86px;
-    color: $darkBlue;
     padding-top: 110px;
     padding-bottom: 40px;
-
+    font-size: 76px;
+    color: $darkBlue;
+    word-wrap: none;
+    
     @media (min-width: 768px) {
       font-size:107px;
     }
   }
+
 
   &__subtitle{
     font-size: 20px;
