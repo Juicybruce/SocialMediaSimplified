@@ -22,7 +22,7 @@
     <div class="container">
         <nav class="header__nav">
             <div class="header__menu">
-                <span></span>
+                <span aria-hidden="true"></span>
             </div>
             <nav class="header__sidebar">
                 <ul class="header__menuListing">
@@ -33,10 +33,12 @@
                     <li><a href="#">Legal</a></li>
                 </ul>
             </nav>
-            <div class="header__search">
-                <input type="text">
-                <button type="btn"><i class="fas fa-search"></i></i></button>
-            </div>
+            <form class="header-search">
+                <input type="text" class="header-search__input">
+                <button type="submit" class="header-search__button">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
             <a href="/" class="header__logo">
                 <img src="./images/Logo.png" alt="Vuecial"/>
             </a>
@@ -51,8 +53,10 @@
     <div class="first-screen__bgsketch2" aria-hidden="true"></div>
     <div class="container">
         <div class="first-screen__title">
-            <h1>Social Media: </h1>
-            <h1><sup>EST</sup>Simplified.<sup>1999</sup></h1>
+            <h1>
+                Social Media:<br>
+                <sup>EST</sup>Simplified.<sup>1999</sup>
+            </h1>
         </div>
         <div class="first-screen__aboutBox">
             <div class="first-screen__paragraph">
@@ -85,13 +89,13 @@
         <div class="second-section__title">WHAT WE DO</div>
         <div class="second-section__container">
             <div class="second-section__bgimg1"></div>
-            <div class="second-section__textbox">
-                <div class="second-section__text">Social Media Marketing</div>
-                <div class="second-section__text">Social Media Management</div>
-                <div class="second-section__text">Campaign Management</div>
-                <div class="second-section__text">Brand Strategy & Design</div>
-                <div class="second-section__text">Marketing Strategy</div>
-            </div>
+            <ul class="do-list">
+                <li class="do-list__item">Social Media Marketing</li>
+                <li class="do-list__item">Social Media Management</li>
+                <li class="do-list__item">Campaign Management</li>
+                <li class="do-list__item">Brand Strategy & Design</li>
+                <li class="do-list__item">Marketing Strategy</li>
+            </ul>
             <div class="second-section__bgimg2"></div>
             <div class="second-section__bgsketch1" ></div>
         </div>
@@ -102,22 +106,22 @@
     <div class="container">
         <div class="third-section__titlebox">
             <div class="third-section__subtitle">FEATURED</div>
-            <div class="third-section__title">Case Studies</div>
+            <div>Case Studies</div>
         </div>
     </div>
     <div class="fullWidthBorder"></div>
     <div class="container">
         <div class="third-section__container">
-            <div class="third-section__column1">
-                <div class="third-section__projectImg1"></div>
+            <div class="third-section__column">
+                <div class="third-section__projectImg third-section__projectImg--1"></div>
                 <div class="third-section__projectName">Project Name - Year 2021</div>
-                <div class="third-section__projectImg2"></div>
+                <div class="third-section__projectImg third-section__projectImg--2"></div>
                 <div class="third-section__projectName">Project Name - Year 2021</div>
             </div>
-            <div class="third-section__column2">
-                <div class="third-section__projectImg3"></div>
+            <div class="third-section__column third-section__column--offset">
+                <div class="third-section__projectImg third-section__projectImg--3"></div>
                 <div class="third-section__projectName">Project Name - Year 2021</div>
-                <div class="third-section__projectImg4"></div>
+                <div class="third-section__projectImg third-section__projectImg--4"></div>
                 <div class="third-section__projectName">Project Name - Year 2021</div>
             </div>
         </div>
@@ -237,7 +241,7 @@
     <div class="container">
         <div class="contact__container">
             <div class="contact__leftColumn">
-                <h1>We'd Love</h1>
+                <h1>We'd Love <br>
                 <h1><sup>20</sup> to Hear <sup>21</sup></h1>
                 <h1>From You!</h1>
                 <div class="contact__paragraph">

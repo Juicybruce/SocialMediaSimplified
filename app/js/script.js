@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 
   //contact form functionality
-  $(".contact__submitButton").hover(function() {
+  $(".contact__button").click(function() {
     $(this).toggleClass(" active");
   })
 
