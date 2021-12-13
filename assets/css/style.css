@@ -663,7 +663,6 @@ body {
   padding-bottom: 40px;
   font-size: 66px;
   color: #10578b;
-  word-wrap: none;
 }
 
 @media (min-width: 576px) {
