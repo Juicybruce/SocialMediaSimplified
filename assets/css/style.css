@@ -213,7 +213,6 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: 20px;
-  max-width: 150px;
   border-width: 1px;
 }
 
@@ -433,9 +432,9 @@ body {
   font-weight: lighter;
   text-align: center;
   line-height: 26px;
-  border-radius: 15px;
-  width: 125px;
-  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 15px;
 }
 
@@ -456,9 +455,9 @@ body {
   font-weight: lighter;
   text-align: center;
   line-height: 29px;
-  border-radius: 15px;
-  width: 125px;
-  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 15px;
 }
 
@@ -662,22 +661,35 @@ body {
   text-align: center;
   padding-top: 110px;
   padding-bottom: 40px;
-  font-size: 76px;
+  font-size: 66px;
   color: #10578b;
   word-wrap: none;
 }
 
+@media (min-width: 576px) {
+  .third-section__titlebox {
+    font-size: 76px;
+  }
+}
+
 @media (min-width: 768px) {
   .third-section__titlebox {
-    font-size: 107px;
+    font-size: 106px;
   }
 }
 
 .third-section__subtitle {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
-  top: 25px;
-  right: 115px;
+  top: 22px;
+  right: 85px;
+}
+
+@media (min-width: 576px) {
+  .third-section__subtitle {
+    top: 25px;
+    right: 100px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1134,7 +1146,7 @@ body {
           justify-content: center;
 }
 
-.sixth-section__text h1 {
+.sixth-section__text h2 {
   text-align: center;
   color: #10578b;
   font-size: 46px;
@@ -1144,13 +1156,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .sixth-section__text h1 {
+  .sixth-section__text h2 {
     font-size: 75px;
   }
 }
 
 @media (min-width: 1000px) {
-  .sixth-section__text h1 {
+  .sixth-section__text h2 {
     font-size: 107px;
   }
 }
@@ -1425,7 +1437,7 @@ body {
   }
 }
 
-.contact__leftColumn h1 {
+.contact__leftColumn h2 {
   text-align: center;
   color: #10578b;
   font-size: 55px;
@@ -1435,13 +1447,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .contact__leftColumn h1 {
+  .contact__leftColumn h2 {
     font-size: 75px;
   }
 }
 
 @media (min-width: 1000px) {
-  .contact__leftColumn h1 {
+  .contact__leftColumn h2 {
     font-size: 107px;
   }
 }
@@ -1493,9 +1505,7 @@ body {
 }
 
 .contact__nameInput {
-  max-width: 450px;
-  border-bottom: 1px solid #10578b;
-  border-width: 1px;
+  max-width: 800px;
   padding-top: 15px;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -1505,8 +1515,9 @@ body {
   border: none;
   color: #10578b;
   background-color: #e7e5d1;
+  border-bottom: 1px solid #10578b;
   height: 30px;
-  max-width: 800px;
+  width: 100%;
   font-size: 20px;
 }
 
@@ -1562,7 +1573,6 @@ body {
   border-radius: 15px;
   font-size: 15px;
   margin: 10px 10px;
-  height: 30px;
   cursor: pointer;
 }
 
@@ -1603,10 +1613,10 @@ body {
   text-align: center;
   line-height: 26px;
   border-radius: 15px;
-  width: 125px;
-  height: 30px;
   font-size: 18px;
   margin: 30px 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;

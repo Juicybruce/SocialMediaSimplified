@@ -27,7 +27,7 @@
       border-bottom: none;
     }
 
-    h1 {
+    h2 {
       text-align: center;
       color: $darkBlue;
       font-size: 55px;
@@ -79,19 +79,18 @@
   }
 
   &__nameInput {
-    max-width: 450px;
-    border-bottom: 1px solid $darkBlue;
-    border-width: 1px;
+    max-width: 800px;
     padding-top: 15px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-
+    
     input {
       border: none;
       color: $darkBlue;
       background-color: $whiteGrey;
+      border-bottom: 1px solid $darkBlue;
       height: 30px;
-      max-width: 800px;
+      width: 100%;
       font-size: 20px;
     }
 
@@ -130,7 +129,6 @@
     border-radius: 15px;
     font-size: 15px;
     margin: 10px 10px;
-    height: 30px;
     cursor: pointer;
 
     &__1 {
@@ -170,10 +168,10 @@
     text-align: center;
     line-height: 26px;
     border-radius: 15px;
-    width: 125px; 
-    height: 30px;
     font-size: 18px;
     margin: 30px 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     transition: 0.3s;
     cursor: pointer;
   }
